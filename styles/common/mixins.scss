@@ -1,0 +1,45 @@
+//MIXINS
+@mixin list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin container {
+  padding: 0 20px;
+  margin: 0 auto;
+
+  @include breakpoint(tablet) {
+    padding: 0 27px;
+  }
+
+  @include breakpoint(desktop) {
+    max-width: 1002px;
+    padding: 0;
+  }
+}
+
+@mixin vertical-alignment {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@mixin responsive {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+
+@mixin breakpoint($point) {
+  @if $point == desktop {
+    @media (min-width: $desktop-width) { @content ; }
+  }
+  @else if $point == tablet {
+    @media (min-width: $tablet-width) { @content ; }
+  }
+  @else if $point == mobile {
+    @media (min-width: $mobile-width)  { @content ; }
+  }
+}

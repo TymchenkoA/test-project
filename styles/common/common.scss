@@ -1,0 +1,55 @@
+html, body {
+  min-width: 360px;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-size: $base-font-size-mobile;
+
+  @include breakpoint(tablet){
+      font-size: $base-font-size-tablet;
+  }
+
+  @include breakpoint(desktop){
+      font-size: $base-font-size-desktop;
+  }
+}
+
+*{
+  outline: none;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+
+  &:hover {
+      text-decoration: none;
+  }
+}
+.clearfix {
+
+  &::before,
+  &::after {
+      content: "";
+      display: table;
+  }
+
+  &::after {
+      clear: both;
+  }
+}
+
+select{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+ // background-image: url(../img/arrow-down.png);
+  background-repeat: no-repeat;
+  background-position: right center;
+  //border: 1px solid $grey-borders;
+  outline: none;
+}
+
+
+select::-ms-expand {
+  display: none;
+}
