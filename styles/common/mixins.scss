@@ -5,19 +5,19 @@
   list-style: none;
 }
 
-@mixin container {
-  padding: 0 20px;
-  margin: 0 auto;
-
-  @include breakpoint(tablet) {
-    padding: 0 27px;
-  }
-
-  @include breakpoint(desktop) {
-    max-width: 1002px;
-    padding: 0;
-  }
-}
+//@mixin container {
+//  padding: 0 20px;
+//  margin: 0 auto;
+//
+//  @include breakpoint(tablet) {
+//    padding: 0 27px;
+//  }
+//
+//  @include breakpoint(desktop) {
+//    max-width: 1002px;
+//    padding: 0;
+//  }
+//}
 
 @mixin vertical-alignment {
   position: absolute;
@@ -37,9 +37,11 @@
     @media (min-width: $desktop-width) { @content ; }
   }
   @else if $point == tablet {
+    //@media (min-width: $tablet-width)and (max-width: $desktop-width-1) { @content ; }
     @media (min-width: $tablet-width) { @content ; }
   }
   @else if $point == mobile {
-    @media (min-width: $mobile-width)  { @content ; }
+    @media (min-width: $mobile-width){ @content ; }
+    //@media (min-width: $mobile-width)and (max-width: $tablet-width-1)  { @content ; }
   }
 }

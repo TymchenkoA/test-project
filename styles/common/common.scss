@@ -1,7 +1,8 @@
 html, body {
-  min-width: 360px;
-  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-family: $font-family-default;
   font-size: $base-font-size-mobile;
+  height: 100%;
+  margin: 0;
 
   @include breakpoint(tablet){
       font-size: $base-font-size-tablet;
@@ -10,6 +11,13 @@ html, body {
   @include breakpoint(desktop){
       font-size: $base-font-size-desktop;
   }
+}
+
+body {
+  color: #fff;
+  margin: 0 auto;
+  min-width: 320px;
+  background-color: $bgGray;
 }
 
 *{

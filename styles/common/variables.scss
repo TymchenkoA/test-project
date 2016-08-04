@@ -1,16 +1,29 @@
 //COLORS
-$white: #fff;
-$black: #000;
+$dimBlack: #222222;
+$bgGray: #f2f2f2;
+$darkGreen: #2b924b;
+$blue: #0569a8;
+$lightBlue: #1a87cc;
+$red: #b83333;
+$white: #ffffff;
+$black: #000000;
 
-
+// FONT STACKS
+$font-family-sans: Arial, sans-serif;
+$font-family-serif: Arial, Georgia, serif;
+$font-family-default: $font-family-sans;
 //BASE FONT
-$base-font-size-mobile: 13px;
+$base-font-size-mobile: 12px;
 $base-font-size-tablet: 14px;
-$base-font-size-desktop: 16px;
+$base-font-size-desktop: 14px;
 
+// FONT WEIGHTS
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-semibold: 700;
+$font-weight-bold: 900;
 
 //WIDTH VARIABLES
 $desktop-width: 1024px;
-$tablet-width: 767px;
-$mobile-width: 360px;
-
+$tablet-width: 768px;
+$mobile-width: 320px;
